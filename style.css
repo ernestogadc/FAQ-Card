@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+body {
+    background-image: linear-gradient(0, hsl(240, 73%, 65%), hsl(273, 75%, 66%));
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-size: 12px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.box {
+    background-color: white;
+    background-image: url(/images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    max-width: 90vw;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+
+.questwrap {
+    margin-top: 20px;
+    padding-right: 35px;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+.questwrap:hover .question {
+    color: hsl(14, 88%, 65%);
+    transition: color .3s ease;
+}
+
+.questwrap img {
+    position: absolute;
+    left: 90%;
+    margin-top: 10px;
+}
+
+.imgbox {
+    width: 95%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+.allquestions {
+    margin-top: 40%;
+    padding-bottom: 60px;
+    overflow: hidden;
+}
+
+#image {
+    position: absolute;
+    transform: translateY(-55%);
+}
+
+.question {
+    font-size: 1.2em;
+}
+
+.open {
+    font-weight: 700;
+}
+
+.turn {
+    transform: rotatex(180deg);
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+@media (min-width:500px) {
+    .allquestions {
+        margin-top: 30%;
+    }
+}
+
+@media (min-width:700px) {
+    .allquestions {
+        margin-top: 20%;
+    }
+}
+
+@media (min-width:900px) {
+    body {
+        font-size: 14px;
+    }
+    .box {
+        background-image: none;
+        display: flex;
+        max-width: 60vw;
+    }
+    .allquestions {
+        margin-top: 10%;
+        padding-bottom: 0;
+        height: auto;
+    }
+    .text-center {
+        text-align: left !important;
+    }
+    .imgbox {
+        background-image: none;
+        background-position: left;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: -20%;
+        height: 80vh;
+    }
+    #image {
+        transform: scale(1.6) translateY(50%);
+        ;
+    }
+}
+
+@media (min-width:1200px) {
+    #image {
+        transform: none;
+    }
+}
